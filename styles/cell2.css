@@ -1,0 +1,49 @@
+.main-container2 {
+  min-width: 250px;
+  width: fit-content;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.2s ease, box2-shadow 0.2s ease; /* Add hover effects */
+  padding: 10px;
+  margin: 10px; /* Add margin for spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box2 {
+  display: flex; /* Use flexbox2 for icon and text */
+  align-items: center; /* Center the icon and text vertically */
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #333;
+  text-align: center;
+  padding: 5px; /* Adjust padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-container2 {
+    min-width: 200px;
+    padding: 8px;
+    margin: 5px;
+  }
+  .box2 {
+    font-size: 0.9rem; /* Slightly smaller font on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container2 {
+    min-width: 100px;
+    padding: 8px;
+    margin: 5px;
+  }
+
+  .box2 {
+    font-size: 0.8rem;
+  }
+}
